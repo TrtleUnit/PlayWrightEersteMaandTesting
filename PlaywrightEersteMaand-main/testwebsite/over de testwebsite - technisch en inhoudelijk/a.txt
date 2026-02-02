@@ -1,0 +1,87 @@
++++   De site: 
+
+      gebouwd met alleen css en html. Voor web-testers zeer relevante talen en zeker ook voor 
+      web-frontend developers. Wie deze template wil gebruiken leert eerst het handwerk. Html en 
+      css zijn prima instappers: twee redelijk eenvoudige computertalen die je helpen om 
+      andere talen sneller te leren.     
+
+      1. Mappenstructuur en indexpagina:
+         In de main van de indexpagina zijn de links per onderwerp gegroepeerd. Die indeling zie je ook 
+         in de map html terug. 
+
+         De media in de mappenstructuur zijn op soort media ingedeeld (pdf, video of png). 
+
+      2. Elke pagina volgt de onderstaande structuur:
+
+         <!DOCTYPE html>
+         <html lang="nl">
+
+         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title>PLACEHOLDER TITLE OF BROWSER TAB</title>
+         </head>
+
+         <body>
+
+            <header>
+               <nav>
+                  PLACEHOLDER CONTENT
+               </nav>
+            </header>
+
+            <main>
+               <h1>PLACEHOLDER TITEL</h1>
+               <div class="inleiding">
+                  PLACEHOLDER CONTENT      
+               </div>
+
+               <hr>
+               <h2>PLACEHOLDER VOOR HOOFDSTUKKEN</h2>
+               <section class="hoofdstuk" id="PLACEHOLDER">
+                  PLACEHOLDER CONTENT         
+               </div>
+            </main>
+
+            <footer>
+               PLACEHOLDER CONTENT
+            </footer>
+
+         </body>
+
+         </html>
+
+      3. Verdere bouwstenen:
+         optionele elementen voor: <section class="hoofdstuk" id="PLACEHOLDER">
+      
+         <div class="inleiding">
+            optionele elementen: <div> <p> <ol> <ul> <img> <object>     
+         </div>
+         <p>
+         <ul>
+         <ol>
+         <div>
+         <div class="linkbox-container-wrap">
+            <div class="linkbox">
+               <p class="imagelinks">
+                  <a><img /></a>
+               </p>
+               <p class="textlinks">
+                  <a>PLACEHOLDER</a>
+               </p>
+            </div>
+         </div>
+         <div class="linkbox-container-nowrap">
+            <div class="linkbox">
+               <p class="imagelinks">
+                  <a><img /></a>
+               </p>
+               <p class="textlinks">
+                  <a>PLACEHOLDER</a>
+               </p>
+            </div>
+         </div> 
+         <object />
+         <iframe />
+         <img alt="" />

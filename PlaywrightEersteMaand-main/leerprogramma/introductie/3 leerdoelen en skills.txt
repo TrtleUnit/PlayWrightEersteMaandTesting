@@ -1,0 +1,25 @@
+LEERDOELEN en SKILLS
+
+------------------------------------------------------------------------
+
+Zie de links Educatief op de indexpagina van de testwebsite. Daar zit een 
+link 'Onboarding skills en leerdoelen'. Die leidt naar een gedetailleerde 
+opsomming van de leerdoelen. Dit zijn in elk geval al de 4 soorten skills 
+die in dit programma centraal staan:
+
+1. Toolskills:
+   handigheid in het werken met windows en computers
+   handigheid in het werken met vs-code
+   handigheid in het werken met playwright
+   handigheid in het werken met typescript
+   handigheid in het werken met browser en devtools
+
+2. Testskills:
+   basiskennis software testen
+
+3. Leerskills:
+   ontdek wat jouw manier van leren is en leer tools 'googlen' en 'ai' te 
+   gebruiken. Kijk de video bisoncalf.mp4 in de map 'typescript-workbench'. 
+
+4. Sociale en Communitie skills / Soft skills:
+   samenwerken, luisteren, samenvatten, doorvragen. 

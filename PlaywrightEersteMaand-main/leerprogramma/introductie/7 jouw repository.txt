@@ -1,0 +1,34 @@
+JOUW REPO
+
+----------------------------------------------------------------------------------
+
+Dit is nu jouw repository, jouw persoonlijke leeromgeving. In elke file kun je 
+aantekeningen erbij typen. 
+
+Je mag je eigen teststcripts in de map testsoftware/tests zetten en runnen.
+
+Je mag in de map deelnemer doen en laten wat je wil. Maak gebruik van die mogelijkheid!
+
+Je mag de repo na afloop van het introductieprogramma blijven gebruiken 
+als testomgeving. Het is namelijk altijd handig om een werkende testomgeving te hebben
+waar je dingen kunt uitproberen!
+
+Binnen de map typescript-workbench kun je typescript code uitproberen.
+
+In je eigen map 'deelnemer' kun je mediafiles opslaan en afspelen, je kunt links in .txt 
+bestanden zetten zoals bijv. https://playwright.dev/. vs-code is zeer veelzijdig en je 
+kunt dat allemaal binnen deze repo.
+
+Hier zit een gedachte achter: hoe meer je binnen en met vs-code werkt, hoe beter je vs-code leert 
+kennen en dat is een basisvaardigheid die je snel onder de knie moet krijgen want
+vs-code is een van de essential tools in de wereld van het web. 
+
+Template
+Het ligt helemaal aan je zelf of je van deze repository iets maakt dat van waarde is voor 
+je cv.
+
+Je kunt met de werkende testcode en de werkende website als voorbeeld een mooi 
+portfolio project voor je cv bouwen. 
+
+Zet bijvoorbeeld je eigen website in de map 'testwebsite' of bouw de bestaande website 
+om naar je eigen.

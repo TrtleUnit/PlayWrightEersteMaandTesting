@@ -1,0 +1,20 @@
+Testskills: Vaktermen
+
+---------------------------------------------------------------------------------
+
+Een van de pagina's in de testwebsite heet Vaktermen. Daar tref je een kort overzicht
+aan van vaak gebruikte termen.
+
+De OPDRACHT 
+Sommige begrippen staan in heel grote letters op de webpagina. Als je in de code kijkt van 
+vaktermen.html zie je dat al die begrippen een id="zero" hebben zoals hier: 
+<strong id="zero">Risk</strong>
+
+Je moet bij alle begrippen die een id="zero" hebben de volgende verandering doorvoeren:
+<strong id="Risk">Risk</strong>. 
+
+In de code van de pagina staan voorbeelden waar dit al gebeurd is.
+
+Als je het goed doet dan krijgen de heel grote letters weer een normaal uiterlijk. Sla de 
+file op en vernieuw de pagina vaktermen in de browser en kijk of de grote letters verdwenen 
+zijn. 

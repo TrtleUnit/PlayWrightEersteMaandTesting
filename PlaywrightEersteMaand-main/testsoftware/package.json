@@ -1,0 +1,19 @@
+{
+  "name": "playwright_eerste_maand",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Jules van Nuijs for BEE Ideas",
+  "license": "ISC",
+
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^22.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "lodash": "^4.17.21"
+  }
+}

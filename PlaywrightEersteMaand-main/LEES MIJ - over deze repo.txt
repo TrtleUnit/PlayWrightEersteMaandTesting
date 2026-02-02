@@ -1,0 +1,47 @@
+ABOUT THIS REPO 
+
+----------------------------------------------------------------------------------
+
+This repo brings together four things: 
+
+1. het leerprogramma, 
+2. de testsoftware,  
+3. de testwebsite en
+4. de typescript-workbench omgeving. 
+ 
+Ad 1. het leerprogramma 
+   Er is gestreefd naar een eenvoudige, werkende repo die de basis 
+   van web en webtesting laat zien en die klaar is om gebruikt te worden in het leerproces.
+
+   De opdrachten binnen het leerprogramma zijn bedoeld om de deelnemer actief te laten werken met 
+   de diverse onderdelen van de repo. 
+ 
+   Op de testwebsite staan instructievideo's die helpen om de testomgeving en de testscripts
+   te gebruiken. In de uitleg-uren van het project wordt je op gang gebracht door de technische coach.
+
+Ad 2. de testsoftware
+   De testsoftware is playwright/typescript. Er zijn werkende testscripts
+   die als voorbeeld met opdrachten. Bovendien kan de 
+   playwright-tool 'codegen' worden gebruikt waarmee testcode kan worden gegenereerd terwijl
+   de deelnemer de website in de browser bezoekt. Ongeveer de helft van die automatisch gegenereerde
+   code werkt en de andere helft niet. Een ideale tool om de basis snel te leren. 
+
+Ad 3. testwebsite
+   Er is naar gestreefd om de content van de testwebsite zo relevant mogelijk te maken voor 
+   startende deelnemers die een traject bij het leerbedrijf doorlopen. Zo werkt de testwebsite ook 
+   als kennisbron. 
+
+   Naast kennis biedt de testwebsite ook templates die van GitHub gehaald kunnen worden. Dit zijn 
+   starterspakketten voor portfolio projecten waarmee deelnemers kunnen laten zien wat ze in huis
+   hebben.
+
+Ad 4. typescript-workbench 
+   Hier kun je typescript uitproberen, los van playwright. Plaats in deze map je eigen .ts files. Je 
+   kunt deze in de terminal laten runnen. Hier kun je allerlei ts code experimenten uitvoeren.
+   Je mag zoveel files als je wilt hier neerzetten. In deze omgeving kun je alles bouwen wat je maar wil
+   met ts.
+
+   Gebruik de package.json in de root om je .ts files te runnen vanuit het NPM SCRIPTS menu in de 
+   primary sidebar of start je run in de terminal met npx tsx ./typescript-workbench/jouwfile.ts  
+
+This repo is still a work in progress. One of the goals is to translate the entire repo into English.  

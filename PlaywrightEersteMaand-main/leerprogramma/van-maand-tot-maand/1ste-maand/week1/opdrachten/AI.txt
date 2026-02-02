@@ -1,0 +1,21 @@
+ChatGPT
+
+----------------------------------------------------------------------------------
+
+Opdracht - ToolSkills omgaan met AI chatgpt, microsoft co-pilot, google search ai mode, enz. 
+
+Dit zijn algemene AI's die over veel onderwerpen iets afweten. Ook van ICT en testen en code.
+
+De OPDRACHT
+Vraag AI:
+- Wat kan ik je allemaal vragen?
+- Waar ben je goed in?
+- Hoe kan je me helpen?
+- Wat zijn slimme vragen waarmee ik het beste uit je kan halen?
+- Met welke instructies die ik je geven kan krijg ik de beste resultaten?
+- Kun je me alle info die je me tot nu toe hebt gegeven ook in het Engels 
+geven?
+- Leg me uit wat het Playwright testframework doet en wat end-to-end testen 
+is. Ga er bij je antwoord van uit dat ik niets van IT afweet.
+
+Hoe beter je leert de juiste vragen te stellen hoe meer je uit AI haalt. 

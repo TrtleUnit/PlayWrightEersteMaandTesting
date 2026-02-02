@@ -1,0 +1,20 @@
+INLEIDING
+
+----------------------------------------------------------------------------------
+
+Of je nu wel of niet ooit serieus hebt nagedacht over de mogelijkheid van een loopbaan 
+in de IT, in onze leerbedrijf ga je die mogelijkheid actief verkennen.  
+
+Praktijkleren staat centraal. Verderop in je traject ga je een commerciële webservice 
+testen en al doende leer je de praktijk van het testen en werken binnen een IT-setting. 
+
+Voordat je gaat praktijkleren krijg je eerst een introductieprogramma dat ongeveer
+vier weken duurt. In die 4 weken leer je de basis die nodig is om aan te haken bij
+ons team van testers.   
+
+Omdat testen leuk is, beginnen we daarmee op dag 1 of uiterlijk op dag 2. 
+ 
+Ter afsluiting van je eerste vier weken presenteer je in het bijzijn van
+het team wat je allemaal hebt geleerd. Je doet dat aan de hand van een 
+website die je zelf hebt gekozen (of je neemt de testwebsite) en waarvoor je zelf een 
+testscenario en -script hebt geschreven.
