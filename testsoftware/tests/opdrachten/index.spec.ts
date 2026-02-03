@@ -40,7 +40,7 @@ import path from 'node:path';
 import { localIndexFile, Index } from '../../pages/index'
 
 // Adjust width and height of the browser to fit your local machine's display resolution (viewport). 
-test.use( { viewport: { width: 1833, height: 980 } } );
+test.use( { viewport: { width: 1920, height: 1080 } } );
 
 //#region What Happens in this Test?
 // Use this regiontemplate in this file to annotate the different tests 
