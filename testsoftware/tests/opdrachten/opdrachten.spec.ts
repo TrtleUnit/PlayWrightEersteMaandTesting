@@ -20,8 +20,16 @@ test( 'Exercise with codegen: go to NOS.nl', async ( { page } ) => {
    // Instructions: script a flow that jumps from 'laatste nieuws' to ' videos' to top video in list of videos.
    await page.getByRole('button', { name: 'Sluiten' }).click();
    await page.getByLabel('Hoofdnavigatie').getByRole('link', { name: 'Laatste nieuws' }).click();
-   await page.locator('#content').getByRole('link', { name: 'Video\'s' }).click();
-   await page.getByRole('link', { name: '0:29 vandaag, 06:20 Dashcam' }).click();
+   await page.getByRole('link', { name: 'Zoeken', exact: true }).click();
+   await page.getByRole('searchbox', { name: 'Zoeken' }).click();
+   await page.getByRole('searchbox', { name: 'Zoeken' }).fill('Flevoland');
+   await page.getByRole('searchbox', { name: 'Zoeken' }).press('Enter');
+   await page.getByRole('button', { name: 'Zoeken' }).click();
+   await page.getByRole('link', { name: 'dinsdag 3 februari, 17:24' }).click();
+   const page1Promise = page.waitForEvent('popup');
+   await page.getByRole('link', { name: 'RTV Noord', exact: true }).click();
+   const page1 = await page1Promise;
+   await page1.getByRole('button', { name: 'Alles accepteren' }).click();
 
 } )
 
@@ -123,3 +131,19 @@ test( 'Exercise without codegen: go to Tempoteam', async ( { page } ) => {
    // Instructions: script a flow to the current IT vacancies
 
 } )   
+
+test( 'Dustloop framedata redirect', async ( { page } ) => {
+   await page.goto( 'https://www.dustloop.com/wikiawait page.getByRole('button', { name: 'Advanced Settings' }).click();
+   await page.getByRole('button', { name: 'Reject all' }).click();
+   await page.locator('.home-link__button > .mw-default-size > a').first().click();
+   await page.getByRole('link', { name: 'GBVSR/Metera' }).first().click();
+   await page.locator('#citizen-section-1').getByRole('link', { name: 'Resources' }).click();
+   await page.getByRole('link', { name: 'Replay Theater' }).click();
+   const page1Promise = page.waitForEvent('popup');
+   await page.getByRole('link', { name: '2026-02-22 Dudeakoff Metera' }).click();
+   const page1 = await page1Promise;
+   await page1.goto('https://www.youtube.com/watch?v=ENr8PjZw558&t=6166s');
+   await page1.getByRole('button', { name: 'Reject the use of cookies and' }).click();
+   ' );
+   });
+
