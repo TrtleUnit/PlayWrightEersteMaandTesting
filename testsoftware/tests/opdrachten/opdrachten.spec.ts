@@ -133,7 +133,8 @@ test( 'Exercise without codegen: go to Tempoteam', async ( { page } ) => {
 } )   
 
 test( 'Dustloop framedata redirect', async ( { page } ) => {
-   await page.goto( 'https://www.dustloop.com/wikiawait page.getByRole('button', { name: 'Advanced Settings' }).click();
+   await page.goto( 'https://dustloop.com/wiki/' );
+   await page.getByRole('button', { name: 'Advanced Settings' }).click();
    await page.getByRole('button', { name: 'Reject all' }).click();
    await page.locator('.home-link__button > .mw-default-size > a').first().click();
    await page.getByRole('link', { name: 'GBVSR/Metera' }).first().click();
@@ -141,9 +142,32 @@ test( 'Dustloop framedata redirect', async ( { page } ) => {
    await page.getByRole('link', { name: 'Replay Theater' }).click();
    const page1Promise = page.waitForEvent('popup');
    await page.getByRole('link', { name: '2026-02-22 Dudeakoff Metera' }).click();
-   const page1 = await page1Promise;
-   await page1.goto('https://www.youtube.com/watch?v=ENr8PjZw558&t=6166s');
-   await page1.getByRole('button', { name: 'Reject the use of cookies and' }).click();
-   ' );
-   });
+    const page1 = await page1Promise;
+    await page1.goto('https://www.youtube.com/watch?v=ENr8PjZw558&t=6166s');
+    await page1.getByRole('button', { name: 'Reject the use of cookies and' }).click();
+
+    // Wait for the YouTube player video to appear
+    await page1.waitForSelector('video.html5-main-video', { state: 'visible', timeout: 10000 });
+
+    // Try clicking the fullscreen button, fall back to keyboard 'f', then JS requestFullscreen
+    try {
+       const fsButton = await page1.$('button.ytp-fullscreen-button');
+       if (fsButton) {
+          await fsButton.click();
+       } else {
+          // Ensure player has focus, then toggle fullscreen with keyboard
+          await page1.click('video.html5-main-video');
+          await page1.keyboard.press('f');
+       }
+    } catch (e) {
+       // Last-resort: call requestFullscreen on the video element inside the page
+       await page1.evaluate(() => {
+          const v = document.querySelector('video');
+          // @ts-ignore - runs in browser
+          if (v && v.requestFullscreen) v.requestFullscreen();
+       });
+    }
+
+    await page1.waitForTimeout(2000);
+    });
 
