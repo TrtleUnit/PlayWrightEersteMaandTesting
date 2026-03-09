@@ -19,10 +19,14 @@ test('Dustloop framedata redirect', async ({ page }) => {
     await page.waitForTimeout(2000);
     await page.getByRole('link', { name: 'Replay Theater' }).click();
     await page.waitForTimeout(2000);
+    await page.getByRole('button').nth(5).click();
+    await page.waitForTimeout(3000);
+    await page.getByRole('menuitem', { name: 'Metera Metera' }).click();
+    await page.waitForTimeout(5000);
     const page1Promise = page.waitForEvent('popup');
     await page.getByRole('link', { name: '2026-02-22 Dudeakoff Metera' }).click();
     const page1 = await page1Promise;
-    await page1.waitForTimeout(3000);
+    await page1.waitForTimeout(5000);
     await page1.goto('https://www.youtube.com/watch?v=ENr8PjZw558&t=6166s');
     await page1.waitForTimeout(2000);
     await page1.getByRole('button', { name: 'Reject the use of cookies and' }).click();
@@ -40,12 +44,8 @@ test('Dustloop framedata redirect', async ({ page }) => {
             // Then press the 'F' key
             await page1.keyboard.press('f');
         }
-    } catch (e) {
-        await page1.evaluate(() => {
-            const v = document.querySelector('video');
-            if (v && v.requestFullscreen) v.requestFullscreen();
-        });
+    } 
+    catch (e) {
     }
-    await page1.waitForTimeout(2000);
 });
 
