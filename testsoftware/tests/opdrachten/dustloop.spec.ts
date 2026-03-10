@@ -1,7 +1,6 @@
 import { test, expect, request } from '@playwright/test';
 import path from 'path';
 
-
 test.use({ viewport: { width: 1900, height: 890 }, });
 
 test('Dustloop framedata redirect', async ({ page }) => {
@@ -36,7 +35,7 @@ test('Dustloop framedata redirect', async ({ page }) => {
 
     // Fullscreen button
     try {
-        const fsButton = await page1.$('button.ytp-fullscreen-button');
+        const fsButton = await page1.locator('button.ytp-fullscreen-button');
         if (fsButton) {
             await fsButton.click();
         } else {
@@ -48,4 +47,3 @@ test('Dustloop framedata redirect', async ({ page }) => {
     catch (e) {
     }
 });
-
